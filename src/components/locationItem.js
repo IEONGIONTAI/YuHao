@@ -2,8 +2,8 @@ import React from "react";
 
 export default function LocationItem() {
   return (
-    <div className="flex flex-col xl:flex-row justify-around items-start h-full bg-[#222222] w-full p-10  lg:px-60">
-      <div className="flex flex-col md:flex-row h-full w-full">
+    <div className="flex flex-col xl:flex-row justify-around items-start h-full  bg-[#222222] w-full p-10  lg:px-60">
+      <div className="flex flex-col md:flex-row h-full w-full animate-fade-down">
         <div className="w-full h-full  border-gray-200 rounded p-5 overflow-hidden">
           <h1 className="font-bold text-xl mb-4">美麗華本店</h1>
           <div className="w-full h-80 bg-gray-300">
@@ -38,7 +38,7 @@ export default function LocationItem() {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row h-full w-full">
+      <div className="flex flex-col md:flex-row h-full w-full animate-fade-down">
         <div className="w-full h-full  border-gray-200 rounded p-5 overflow-hidden">
           <h1 className="font-bold text-xl mb-4">大直總店</h1>
           <div className="w-full h-80 bg-gray-300">

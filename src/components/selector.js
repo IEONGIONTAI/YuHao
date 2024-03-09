@@ -13,7 +13,7 @@ export default function Selector() {
     { id: "porridge", text: "燴飯/粥類" },
   ];
   return (
-    <div className="flex flex-col justify-center items-center bg-[#1d1d1d]">
+    <div className="flex flex-col justify-center items-center bg-[#1d1d1d] py-10">
       <h2 className="text-2xl font-bold my-4">菜單</h2>
       <div className="flex flex-col md:flex-row justify-center  md:items-center space-y-1 md:space-x-10 animate-jump-in flex-wrap ">
         {tabs.map((tab) => (
@@ -32,7 +32,6 @@ export default function Selector() {
           </button>
         ))}
       </div>
-      <FoodItem />
     </div>
   );
 }
