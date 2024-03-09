@@ -1,0 +1,59 @@
+/* Google字體導入 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+SC:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 重設基本元素樣式 */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Body設定 */
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #e0e0e0;
+  background-color: #121212;
+}
+
+/* 標題樣式 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Serif SC", serif;
+  color: #c62828;
+}
+
+/* 鏈接樣式 */
+a {
+  color: #ff7043;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 輔助文本顏色 */
+.secondary-text {
+  color: #ff7043;
+}
