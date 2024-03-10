@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.35dad846.css",
-    "main.js": "/static/js/main.bc296353.js",
-    "static/media/Menu_now.jpg": "/static/media/Menu_now.24dad2611c56736ee620.jpg",
-    "static/media/page-0001.jpg": "/static/media/page-0001.0ed639f6490e124cd297.jpg",
-    "static/media/page-0002.jpg": "/static/media/page-0002.ec9b9a6b2e8b47a02b1d.jpg",
-    "index.html": "/index.html"
+    "main.css": "/YuHao/static/css/main.35dad846.css",
+    "main.js": "/YuHao/static/js/main.f546ca02.js",
+    "static/media/Menu_now.jpg": "/YuHao/static/media/Menu_now.24dad2611c56736ee620.jpg",
+    "static/media/page-0001.jpg": "/YuHao/static/media/page-0001.0ed639f6490e124cd297.jpg",
+    "static/media/page-0002.jpg": "/YuHao/static/media/page-0002.ec9b9a6b2e8b47a02b1d.jpg",
+    "index.html": "/YuHao/index.html"
   },
   "entrypoints": [
     "static/css/main.35dad846.css",
-    "static/js/main.bc296353.js"
+    "static/js/main.f546ca02.js"
   ]
 }
