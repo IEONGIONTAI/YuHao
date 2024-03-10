@@ -2,6 +2,7 @@
   "name": "YuHao",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ieongiontai.github.io/YuHao",
   "dependencies": {
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
