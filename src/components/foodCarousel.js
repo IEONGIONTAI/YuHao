@@ -11,8 +11,8 @@ export default function FoodCarousel() {
       </h2>
       <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
         <Carousel slide={false}>
-          <img src={img1} style={{ width: "10%" }} alt="..." />
-          <img src={img2} alt="..." style={{ width: "20%" }} />
+          <img src={img1} className="w-28 md:w-60" alt="..." />
+          <img src={img2} className="w-44 md:w-96" />
         </Carousel>
       </div>
     </div>
