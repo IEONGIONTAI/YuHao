@@ -6,6 +6,7 @@ import FoodCarousel from "../components/foodCarousel";
 import AboutUs from "../components/aboutUs";
 import Location from "../components/location";
 import LocationItem from "../components/locationItem";
+import Footer from "../components/footer";
 
 export default function Landing() {
   return (
@@ -22,8 +23,9 @@ export default function Landing() {
       </div>
 
       <AboutUs />
+      <FoodCarousel />
       <LocationItem />
-      <Selector />
+      <Footer />
     </>
   );
 }
