@@ -1,10 +1,8 @@
 import React, { useRef } from "react";
 import Header from "../components/header";
 import Brand from "../components/brand";
-import Selector from "../components/selector";
 import FoodCarousel from "../components/foodCarousel";
 import AboutUs from "../components/aboutUs";
-import Location from "../components/location";
 import LocationItem from "../components/locationItem";
 import Footer from "../components/footer";
 
@@ -26,13 +24,12 @@ export default function Landing() {
         className="bg-cover bg-center"
         style={{
           backgroundImage:
-            "url(https://resumedata01.s3.ap-northeast-1.amazonaws.com/%E6%8E%9B%E7%88%90%E7%83%A4%E9%B4%A81.jpg)",
+            "url(https://resumedata01.s3.ap-northeast-1.amazonaws.com/Golden%2BChina%2BRestaurant3866.jpg)",
         }}
       >
         <Header onClick={handleScroll} />
-        <Brand />
+        <Brand name={"裕濠小館"} slogan={"港式燒臘"} />
       </div>
-
       <div ref={aboutUsRef}>
         <AboutUs />
       </div>

@@ -3,7 +3,7 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "首頁", href: "#" },
+  { name: "首頁", href: "/" },
   { name: "關於我們", href: "#" },
   { name: "聯絡信息", href: "#" },
   { name: "菜單介紹", href: "menu" },
@@ -41,6 +41,12 @@ export default function Header(props) {
             </a>
           ))}
         </div>
+        <button
+          className="text-xl py-4 ml-12 px-2 font-semibold leading-6 border rounded"
+          onClick={() => alert("Coming Soon!")}
+        >
+          {"立即訂購"}
+        </button>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
       </nav>
       <Dialog

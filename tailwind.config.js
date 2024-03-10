@@ -11,5 +11,6 @@ module.exports = {
     require("tailwindcss-animated"),
     require("flowbite/plugin"),
     require("@tailwindcss/forms"),
+    require("@tailwindcss/forms"),
   ],
 };
