@@ -3,7 +3,7 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "首頁", href: "#" },
+  { name: "首頁", href: "/" },
   { name: "關於我們", href: "#" },
   { name: "聯絡信息", href: "#" },
   { name: "菜單介紹", href: "menu" },
