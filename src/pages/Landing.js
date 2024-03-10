@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Header from "../components/header";
 import Brand from "../components/brand";
 import Selector from "../components/selector";
@@ -9,6 +9,17 @@ import LocationItem from "../components/locationItem";
 import Footer from "../components/footer";
 
 export default function Landing() {
+  const aboutUsRef = useRef(null);
+  const locationItemRef = useRef(null);
+
+  const handleScroll = (name) => {
+    if (name === "關於我們")
+      aboutUsRef.current.scrollIntoView({ behavior: "smooth" });
+    else if (name === "聯絡信息")
+      locationItemRef.current.scrollIntoView({ behavior: "smooth" });
+    else console.log("no such section found.");
+  };
+
   return (
     <>
       <div
@@ -18,13 +29,18 @@ export default function Landing() {
             "url(https://resumedata01.s3.ap-northeast-1.amazonaws.com/%E6%8E%9B%E7%88%90%E7%83%A4%E9%B4%A81.jpg)",
         }}
       >
-        <Header />
+        <Header onClick={handleScroll} />
         <Brand />
       </div>
 
-      <AboutUs />
+      <div ref={aboutUsRef}>
+        <AboutUs />
+      </div>
       <FoodCarousel />
-      <LocationItem />
+      <div ref={locationItemRef}>
+        <LocationItem />
+      </div>
+
       <Footer />
     </>
   );

@@ -6,10 +6,10 @@ const navigation = [
   { name: "首頁", href: "#" },
   { name: "關於我們", href: "#" },
   { name: "聯絡信息", href: "#" },
-  { name: "菜單介紹", href: "#" },
+  { name: "菜單介紹", href: "menu" },
 ];
 
-export default function Header() {
+export default function Header(props) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -34,6 +34,7 @@ export default function Header() {
             <a
               key={item.name}
               href={item.href}
+              onClick={() => props.onClick(item.name)}
               className="text-xl font-semibold leading-6 "
             >
               {item.name}
