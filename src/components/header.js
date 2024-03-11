@@ -12,6 +12,10 @@ const navigation = [
 export default function Header(props) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const handleClick = (item) => {
+    setMobileMenuOpen(false);
+    props.onClick(item.name);
+  };
   return (
     <header className="animate-fade-down">
       <nav
@@ -81,6 +85,7 @@ export default function Header(props) {
                   <a
                     key={item.name}
                     href={item.href}
+                    onClick={() => handleClick(item)}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50"
                   >
                     {item.name}
