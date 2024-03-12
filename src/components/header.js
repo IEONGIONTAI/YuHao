@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useNavigate } from "react-router-dom";
 
 const navigation = [
   { name: "首頁", href: "/" },
@@ -11,6 +12,7 @@ const navigation = [
 
 export default function Header(props) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const handleClick = (item) => {
     setMobileMenuOpen(false);
@@ -24,7 +26,7 @@ export default function Header(props) {
       >
         <button
           className="lg:hidden text-xl py-4 px-2 font-semibold leading-6 border rounded"
-          onClick={() => alert("Coming Soon!")}
+          onClick={() => alert("Coming soon!")}
         >
           {"立即訂購"}
         </button>
@@ -53,7 +55,7 @@ export default function Header(props) {
         </div>
         <button
           className="hidden lg:flex text-xl py-4 ml-12 px-2 font-semibold leading-6 border rounded"
-          onClick={() => alert("Coming Soon!")}
+          onClick={() => alert("Coming soon!")}
         >
           {"立即訂購"}
         </button>

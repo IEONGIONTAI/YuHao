@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 import Landing from "./pages/Landing";
 import Menu from "./pages/Menu";
+import Order from "./pages/Order";
+
 const Layout = () => (
   <>
     <Outlet />
@@ -19,6 +21,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<Layout />}>
       <Route index element={<Landing />} />
       <Route path="/menu" element={<Menu />} />
+      <Route path="/order" element={<Order />} />
     </Route>
   )
 );

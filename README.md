@@ -1,6 +1,6 @@
 # YuHao Project
 
-## Introduction
+## Installation
 
 ## Features
 
